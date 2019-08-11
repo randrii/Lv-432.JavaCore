@@ -10,7 +10,6 @@ public class Person {
     private String lastName;
     private int birthYear;
     private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-    private static Calendar calendar = Calendar.getInstance();
 
     public String getFirstName() {
         return firstName;
@@ -44,7 +43,7 @@ public class Person {
     }
 
     int getAge(){
-        return calendar.get(Calendar.YEAR) - this.birthYear;
+        return Calendar.getInstance().get(Calendar.YEAR) - this.birthYear;
     }
 
     void input() throws IOException {

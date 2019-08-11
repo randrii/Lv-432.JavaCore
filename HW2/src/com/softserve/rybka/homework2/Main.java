@@ -26,11 +26,10 @@ public class Main {
         person3.output();
         person4.output();
 
-        person5.changeName("Maryk", null);
+        person5.changeName("Markis", null);
         person5.output();
 
         person4.input();
-
         person1.output();
         person2.output();
         person3.output();
