@@ -64,7 +64,7 @@ public class Task13 {
         System.out.println("Error description: "+err.getErr());
     }
 
-    private static boolean belongRange(float f){
+    public static boolean belongRange(float f){
         return  (f >= -5 && f <= 5);
     }
 
