@@ -131,7 +131,5 @@ public class example{
         if (continent5.getCountry1().equals(country1) || continent5.getCountry2().equals(country1) || continent5.getCountry3().equals(country1)){
             System.out.println("It situated in "+continent5);
         }
-
-
     }
 }
