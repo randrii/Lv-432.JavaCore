@@ -1,8 +1,5 @@
 package com.softserve.rybka.HW5;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class Task2 {
     public static void main(String[] args) {
         Employee[] employees = new Employee[5];
@@ -33,7 +30,7 @@ interface Calculable {
     int calculatePay();
 }
 
-class Employee{
+class Employee implements Calculable{
     private int employeeId;
     private String name;
 
@@ -58,10 +55,13 @@ class Employee{
         this.name = name;
     }
 
-
+    @Override
+    public int calculatePay() {
+        return 0;
+    }
 }
 
-class SalariedEmployee extends Employee implements Calculable{
+class SalariedEmployee extends Employee{
 
     private int socialSecurityNumber;
     private int hourlyRate;
@@ -106,7 +106,7 @@ class SalariedEmployee extends Employee implements Calculable{
 
 }
 
-class ContractEmployee extends Employee implements Calculable {
+class ContractEmployee extends Employee{
 
     private int federalTaxIdMember;
     private int fixedMonthlyPayment;

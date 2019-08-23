@@ -10,12 +10,11 @@ public class task2 {
 
         for (Person person: people){
             person.print();
-            if (person instanceof Teacher){
-                System.out.println("Salary: "+((Teacher) person).salary());
+
+            if (person instanceof Staff){
+                System.out.println("Salary: "+ ((Staff)person).salary());
             }
-            if (person instanceof Cleaner){
-                System.out.println("Salary: "+((Cleaner) person).salary());
-            }
+
         }
     }
 }
