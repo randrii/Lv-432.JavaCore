@@ -10,8 +10,8 @@ public class Task3 {
         //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         //String text = reader.readLine();
 
-        String text = "I have $5.25 and You have $100.00. This bottle costs $ 5.50. Bill has 6.75. But now 3.95$ left.";
-        String pattern = "\\$\\s?\\d*\\.\\d{2}";
+        String text = "I have $5.25 and You have $100.00. This bottle costs $ 5.50. Bill has 6.75. But now $3.95 left. Snickers costs $4 but I have only $3.";
+        String pattern = "\\$\\s?(\\d*(\\.\\d{2})*)";
         //String pattern = "\\$(\\d*)(\\.\\d{2})";
 
         Pattern p = Pattern.compile(pattern);
