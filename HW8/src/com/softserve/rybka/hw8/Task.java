@@ -21,13 +21,13 @@ public class Task {
 
             System.out.println("Their division is " + div(a, b));
 
-            System.out.println("Task 2. Check if numbers belong to defined interval");
-
         } catch (NumberFormatException e) {
             System.out.println("Error: "+e.getMessage());
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println("Task 2. Check if numbers belong to defined interval");
 
         int count = 0;
         int tmp;
@@ -62,11 +62,7 @@ public class Task {
         return a / b;
     }
 
-    private static boolean readNumber(int number, int start, int end) throws NumberFormatException {
-        try {
-            return (number >= start & number <= end);
-        }   catch (Exception e){
-            throw new NumberFormatException("An invalid number or non-number text");
-        }
+    private static boolean readNumber(int number, int start, int end) {
+        return (number >= start & number <= end);
     }
 }
